@@ -16,7 +16,9 @@ export class AppComponent {
   public username: string;
   public password: string;
 
-  authenticate() {
+  public displayedUsername: string;
 
+  authenticate(username: string) {
+    this.displayedUsername = username;
   }
 }
