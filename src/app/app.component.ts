@@ -17,8 +17,14 @@ export class AppComponent {
   public password: string;
 
   public displayedUsername: string;
+  public displayedPassword: string;
 
-  authenticate(username: string) {
+  authenticate(username: string, password: string) {
     this.displayedUsername = username;
+    this.displayedPassword = password;
+  }
+
+  display() {
+    document.getElementByClass("logged_ass").style.display = "show";
   }
 }
