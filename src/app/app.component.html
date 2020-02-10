@@ -1,4 +1,4 @@
-<div class="login-form" *ngIf="!userData.username">
+<div class="login-form">
   <form>
     <!--  AVATAR   -->
     <div class="avatar">
@@ -22,12 +22,6 @@
     <!--  button   -->
     <input type="submit" class="btn btn-primary btn-block btn-lg" value="Log In"
       (click)="authenticate(username, password)">
-    <div class="logged_as">Logged in as {{displayedUsername}} with password
-      {{displayedPassword}}
-    </div>
+    <div class="logged_as">{{displayedUsername}}</div>
   </form>
-</div>
-
-<div *ngIf="userData.username">
-  you are logged in
 </div>
