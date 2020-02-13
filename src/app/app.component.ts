@@ -16,4 +16,8 @@ export class AppComponent {
    *    You should bind registration data to user model.
    * 7. Use node package manager (npm) to install graph.js library to your project (we're going to use that to render graphs)
    */
+
+  /**
+   * To do: Console log
+   */
 }
