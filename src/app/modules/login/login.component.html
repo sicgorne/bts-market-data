@@ -12,17 +12,16 @@
     <!--  username   -->
     <div class="form-group">
       <input type="text" name="username" [(ngModel)]="authentication.email" class="form-control" placeholder="Username"
-             required="required">
+        required="required">
     </div>
     <!--  password   -->
     <div class="form-group">
-      <input type="password" name="password" [(ngModel)]="authentication.password" class="form-control" placeholder="Password"
-             required="required">
+      <input type="password" name="password" [(ngModel)]="authentication.password" class="form-control"
+        placeholder="Password" required="required">
     </div>
     <!--  button   -->
-    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Log In"
-           (click)="authenticate()">
+    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Log In" (click)="authenticate()">
 
-    <a [routerLink]="['/']">Back to main</a>
+    <!-- <a [routerLink]="['/']">Back to main</a> -->
   </form>
 </div>
