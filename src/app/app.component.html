@@ -1,27 +1,3 @@
-<div class="login-form">
-  <form>
-    <!--  AVATAR   -->
-    <div class="avatar">
-      <i class="sm material-icons">
-        perm_identity
-      </i>
-    </div>
-    <!--  LOGIN TITLE   -->
-    <h4 class="modal-title">Login
-    </h4>
-    <!--  username   -->
-    <div class="form-group">
-      <input type="text" name="username" [(ngModel)]="username" class="form-control" placeholder="Username"
-        required="required">
-    </div>
-    <!--  password   -->
-    <div class="form-group">
-      <input type="password" name="password" [(ngModel)]="password" class="form-control" placeholder="Password"
-        required="required">
-    </div>
-    <!--  button   -->
-    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Log In"
-      (click)="authenticate(username, password)">
-    <div class="logged_as">{{displayedUsername}}</div>
-  </form>
-</div>
+
+
+<router-outlet></router-outlet>
