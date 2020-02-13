@@ -8,26 +8,32 @@
     <h6 class="modal-sub">Create your account to begin</h6>
 
     <div class="form-group">
-      <input type="text" name="firstName" class="form-control" placeholder="First name" required="required">
+      <input type="text" name="firstName" class="form-control" [(ngModel)]="user.firstName" placeholder="First name"
+        required="required">
     </div>
 
     <div class="form-group">
-      <input type="text" name="lastName" class="form-control" placeholder="Last name" required="required">
+      <input type="text" name="lastName" class="form-control" [(ngModel)]="user.lastName" placeholder="Last name"
+        required="required">
     </div>
     <hr>
 
     <div class="form-group">
-      <input type="email" name="email" class="form-control" placeholder="Email" required="required">
+      <input type="email" name="email" class="form-control" [(ngModel)]="user.email" placeholder="Email"
+        required="required">
     </div>
     <div class="form-group">
-      <input type="email" name="email2" class="form-control" placeholder="Confirm Email" required="required">
+      <input type="email" name="email2" class="form-control" [(ngModel)]="user.email2" placeholder="Confirm Email"
+        required="required">
     </div>
     <hr>
     <div class="form-group">
-      <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+      <input type="password" name="password" class="form-control" [(ngModel)]="user.password" placeholder="Password"
+        required="required">
     </div>
     <div class="form-group">
-      <input type="password" name="password2" class="form-control" placeholder="Confirm password" required="required">
+      <input type="password" name="password2" class="form-control" [(ngModel)]="user.password2"
+        placeholder="Confirm password" required="required">
     </div>
     <!--  button   -->
     <input type="submit" class="btn btn-primary btn-block btn-lg" value="Register" (click)="register()">

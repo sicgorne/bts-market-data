@@ -41,10 +41,25 @@ nav ul li .nav__other {
   border-radius: 3px;
 }
 
+.nav__register {
+  color: #4aba70;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.nav__register:hover {
+  color: #00843f;
+  transition: all .5s;
+}
+
 nav ul li .nav__other:hover {
   color: #4aba70;
   text-decoration: none;
+  transition: all .5s;
 }
+
 
 .login {
   font-weight: 400;
