@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './modules/about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ChartsModule } from 'ng2-charts';
+
 
 
 @NgModule({
@@ -24,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     FormsModule,
     RouterModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
