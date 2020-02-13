@@ -9,12 +9,12 @@
   <img src="assets/img/logo.png" alt="Logo" class="logo">
 
   <ul>
-    <li><a href="#" class="nav__other">Home</a></li>
+    <li><a href="#" class=" nav__other">Home</a></li>
     <li><a href="#" class="nav__other">About</a></li>
     <li><a href="#" class="nav__other">Github</a></li>
     <li><a href="#" class="nav__other">API</a></li>
-    <li><a href="#" class="nav__other">Register</a></li>
-    <li><a href="#" class="login">Login</a></li>
+    <li><a [routerLink]="['/register']" class="nav__other">Register</a></li>
+    <li><a [routerLink]="['/login']" class="login">Login</a></li>
   </ul>
 </nav>
 
