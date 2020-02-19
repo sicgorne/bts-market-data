@@ -1,5 +1,7 @@
 import { TradingHintsService } from './../../services/trading-hints.service';
 import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import { Chart } from 'chart.js';
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -14,6 +16,18 @@ export class AboutComponent implements OnInit {
   ) { }
   ngOnInit(): void {
   }
+
+
+  // ================================== Basic
+  // public getBtcUsdPairs(): void {
+  //   this.tradingHintsService.getBtcUsdPairs()
+  //     .subscribe(
+  //       res => this.loadedBtcUsdPairs(res),
+  //       error => console.log(error)
+  //     );
+  // }
+  // ===================================
+
   public getBtcUsdPairs(): void {
     this.tradingHintsService.getBtcUsdPairs()
       .subscribe(
@@ -21,6 +35,7 @@ export class AboutComponent implements OnInit {
         error => console.log(error)
       );
   }
+
   public loadedBtcUsdPairs(data: any): void {
     this.pairsData.push(data);
     this.changeDetection.markForCheck(); // TOLE JE FUKNCIJA KI NE ZLOUDA STRANI DOKLER NE DOBIŠ PODATKOV
