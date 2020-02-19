@@ -1,0 +1,115 @@
+{
+  "adausd": {
+    "last_action": "SELL",
+    "last_action_price": 0.0592405,
+    "last_action_time": "2020-02-16 17:21:43",
+    "down_confidence": "61%",
+    "up_confidence": "39%",
+    "last_price": 0.0614295
+  },
+  "eosbtc": {
+    "last_action": "BUY",
+    "last_action_price": 0.000515885,
+    "last_action_time": "2020-02-12 00:41:52",
+    "down_confidence": "36%",
+    "up_confidence": "64%",
+    "last_price": 0.00045535
+  },
+  "linkusd": {
+    "last_action": "BUY",
+    "last_action_price": 3.329625,
+    "last_action_time": "2020-02-09 18:08:00",
+    "last_price": 4.47273,
+    "down_confidence": "27%",
+    "up_confidence": "73%"
+  },
+  "xtzbtc": {
+    "last_price": 0.00032938,
+    "last_action": "BUY",
+    "last_action_price": 0.0001751,
+    "last_action_time": "2020-01-03 21:21:55",
+    "down_confidence": "33%",
+    "up_confidence": "67%"
+  },
+  "xrpusd": {
+    "last_action": "BUY",
+    "last_action_price": 0.29101,
+    "last_action_time": "2020-02-18 01:36:41",
+    "down_confidence": "42%",
+    "up_confidence": "57%",
+    "last_price": 0.29016
+  },
+  "eurusd": {
+    "down_confidence": "98%",
+    "up_confidence": "2%",
+    "last_action": "SELL",
+    "last_action_price": 1.11502,
+    "last_action_time": "2020-01-03 20:35:45",
+    "last_price": 1.08361
+  },
+  "ltcusd": {
+    "down_confidence": "23%",
+    "up_confidence": "77%",
+    "last_price": 73.775,
+    "last_action": "BUY",
+    "last_action_price": 67.97,
+    "last_action_time": "2020-02-05 02:54:04"
+  },
+  "neousd": {
+    "last_action": "BUY",
+    "last_action_price": 8.925650000000001,
+    "last_action_time": "2020-01-04 09:19:00",
+    "last_price": 15.0925,
+    "down_confidence": "24%",
+    "up_confidence": "76%"
+  },
+  "btcusd": {
+    "last_price": 9776.365,
+    "last_action": "BUY",
+    "last_action_price": 7340.945,
+    "last_action_time": "2020-01-03 21:21:20",
+    "down_confidence": "22%",
+    "up_confidence": "78%"
+  },
+  "etcusd": {
+    "down_confidence": "31%",
+    "up_confidence": "69%",
+    "last_price": 9.60815,
+    "last_action": "BUY",
+    "last_action_price": 9.0612,
+    "last_action_time": "2020-02-17 05:03:25"
+  },
+  "ethusd": {
+    "last_price": 267.445,
+    "down_confidence": "15%",
+    "up_confidence": "85%",
+    "last_action": "BUY",
+    "last_action_price": 133.595,
+    "last_action_time": "2020-01-03 21:40:57"
+  },
+  "zecbtc": {
+    "last_price": 0.006508,
+    "down_confidence": "28%",
+    "up_confidence": "72%",
+    "last_action": "BUY",
+    "last_action_price": 0.00592215,
+    "last_action_time": "2020-02-17 11:32:53"
+  },
+  "xmrusd": {
+    "last_action": "BUY",
+    "last_action_price": 94.3735,
+    "last_action_time": "2020-02-15 08:29:59",
+    "last_price": 83.454,
+    "down_confidence": "26%",
+    "up_confidence": "74%"
+  },
+  "bchusd": {
+    "down_confidence": "47%",
+    "up_confidence": "53%",
+    "last_price": 411.42,
+    "last_action": "BUY",
+    "last_action_price": 415.195,
+    "last_action_time": "2020-02-18 04:36:41"
+  },
+  "timestamp": 1582009146
+}

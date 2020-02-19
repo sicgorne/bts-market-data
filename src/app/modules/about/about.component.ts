@@ -1,32 +1,29 @@
-import { Component, OnInit } from '@angular/core';
-
+import { TradingHintsService } from './../../services/trading-hints.service';
+import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AboutComponent  {
-
-  lineChartData: ChartDataSets[] = [
-    { data: [85, 72, 78, 75, 77, 75], label: 'Crude oil prices' },
-  ];
-
-  lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June'];
-
-  lineChartOptions = {
-    responsive: true,
-  };
-
-  lineChartColors: Color[] = [
-    {
-      borderColor: 'black',
-      backgroundColor: 'rgba(255,255,0,0.28)',
-    },
-  ];
-
-  lineChartLegend = true;
-  lineChartPlugins = [];
-  lineChartType = 'line';
-
+export class AboutComponent implements OnInit {
+  public pairsData = [];
+  constructor(
+    private tradingHintsService: TradingHintsService,
+    private changeDetection: ChangeDetectorRef
+  ) { }
+  ngOnInit(): void {
+  }
+  public getBtcUsdPairs(): void {
+    this.tradingHintsService.getBtcUsdPairs()
+      .subscribe(
+        res => this.loadedBtcUsdPairs(res),
+        error => console.log(error)
+      );
+  }
+  public loadedBtcUsdPairs(data: any): void {
+    this.pairsData.push(data);
+    this.changeDetection.markForCheck(); // TOLE JE FUKNCIJA KI NE ZLOUDA STRANI DOKLER NE DOBIŠ PODATKOV
+    // KER DRUGAČE SE STRAN ZLOUDA IN NIMAŠ PODATKOV ČEPRAV SI JIH DOBIL KER JE BIL ANGULAR HITREJŠI OD APIJA
+  }
 }
-

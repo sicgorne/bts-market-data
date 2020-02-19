@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ChartsModule } from 'ng2-charts';
 
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ChartsModule } from 'ng2-charts';
     BrowserAnimationsModule,
     FormsModule,
     RouterModule,
-    ChartsModule
+    ChartsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

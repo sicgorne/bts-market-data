@@ -1,11 +1,3 @@
-<div class="chart-wrapper">
-  <canvas baseChart
-          [datasets]="lineChartData"
-          [labels]="lineChartLabels"
-          [options]="lineChartOptions"
-          [colors]="lineChartColors"
-          [legend]="lineChartLegend"
-          [chartType]="lineChartType"
-          [plugins]="lineChartPlugins">
-  </canvas>
-</div>
+<button class="mg-5 btn btn-primary" (click)="getBtcUsdPairs()">Fetch Data</button>
+<div *ngFor="let hintage of pairsData">
+  <h6>{{hintage.low}}</h6>
