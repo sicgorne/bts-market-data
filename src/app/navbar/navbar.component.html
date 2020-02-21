@@ -1,7 +1,7 @@
 <!--
     NAVIGATION
 -->
-<nav>
+<nav #sidenav>
   <input type="checkbox" id="check">
   <label for="check" class="checkbtn">
     <i class="fa fa-bars"></i>
@@ -9,11 +9,11 @@
   <img src="assets/img/logo.png" alt="Logo" class="logo">
 
   <ul class="main-menu">
-    <li><a href="#" class=" nav__other">Home</a></li>
-    <li><a [routerLink]="['/about']" class=" nav__other">About</a></li>
-    <li><a href="#" class="nav__other">Github</a></li>
-    <li><a href="#" class="nav__other">API</a></li>
-    <li><a [routerLink]="['/register']" class="nav__register">Register</a></li>
-    <li><a [routerLink]="['/login']" class="login">Login</a></li>
+    <li><a href="#" class=" nav__other" (click)="sidenav.close()">Home</a></li>
+    <li><a [routerLink]="['/about']" class=" nav__other" (click)="sidenav.close()">About</a></li>
+    <li><a href="#" class="nav__other" (click)="sidenav.close()">Github</a></li>
+    <li><a href="#" class="nav__other" (click)="sidenav.close()">API</a></li>
+    <li><a [routerLink]="['/register']" class="nav__register" (click)="sidenav.close()">Register</a></li>
+    <li><a [routerLink]="['/login']" class="login" (click)="sidenav.close()">Login</a></li>
   </ul>
 </nav>

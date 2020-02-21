@@ -1,3 +1,7 @@
 <button class="mg-5 btn btn-primary" (click)="getBtcUsdPairs()">Fetch Data</button>
 <div *ngFor="let hintage of pairsData">
   <h6>{{hintage.low}}</h6>
+
+  <div *ngIf="chart">
+    <canvas id="canvas">{{ chart }}</canvas>
+  </div>
